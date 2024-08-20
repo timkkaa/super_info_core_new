@@ -1,0 +1,25 @@
+# pip install -r requirements.txt
+# cd super_info_core
+# python manage.py runserver
+#  dir
+# ls
+# .venv\Scripts\activate
+# python -m venv venv
+# git clone ...
+# git status
+# git --version
+# git add ..
+# git commit "..."
+# git push
+# python manage.py makemigrations
+# python manage.py migrate
+# pip freeze
+#
+#
+#
+#
+#
+#
+#
+#
+#
