@@ -12,9 +12,9 @@ urlpatterns = [
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('home/', HomeView.as_view()),
-    path('publication/', PublicationView.as_view()),
-    path('about/', AboutView.as_view()),
+    path('home/', HomeView.as_view(), name='home-url'),
+    path('publication/<int:pk>/', PublicationView.as_view(), name='publication-detail-url'),
+    path('about/', AboutView.as_view(), name='about-url'),
     path('publication-detail/<int:pk>/create-commant/', CreatePublicationCommentView.as_view()),
 
 ]
