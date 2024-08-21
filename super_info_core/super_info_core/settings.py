@@ -114,6 +114,8 @@ USE_TZ = True
 
 gettext = lambda s: s
 
+LANGUAGE_CODE = "ru"
+
 LANGUAGES = (
     ('ru', gettext('Russian')),
     ('ky', gettext('Kyrgyz')),
@@ -122,7 +124,7 @@ LANGUAGES = (
 LOCALE_PATHS = [
     BASE_DIR / 'locale/',
 ]
-LANGUAGE_CODE = 'ru'
+MODELTRANSLATION_DEFAULT_LANGUAGE = 'ru'
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')

@@ -19,12 +19,24 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 #: .\super_info_core\settings.py:118
 msgid "Russian"
-msgstr ""
+msgstr "Россия"
 
 #: .\super_info_core\settings.py:119
 msgid "Kyrgyz"
-msgstr ""
+msgstr "Кыргызтан"
 
 #: .\templates\index.html:19
 msgid "Главная"
-msgstr ""
+msgstr "Башкы"
+
+msgid "Page"
+msgstr "Бет"
+
+msgid "Next"
+msgstr "Кийинки"
+
+msgid "Blok Home"
+msgstr "Башкы бет"
+
+msgid "New"
+msgstr "Жаны"
