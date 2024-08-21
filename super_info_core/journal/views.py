@@ -56,13 +56,13 @@ class AboutView(TemplateView):
         }
         return context
 
-    def post(request, **kwargs):
+    def post(self, request, **kwargs):
         publication_pk = kwargs['pk']
         publication = Publication.objects.get(id=publication_pk)
         commant_text = request.POST['comment_text']
         PublicationComment.objects.create(publication=publication, text=commant_text)
         bot.send_message(chat_id=1723863989, text='Для вашей публикации написали комментрий. Не забудь проверить!')
-        return request('publication-detail.html', publication_pk),
+        return re('publication-detail.html', publication_pk),
 
 class CreatePublicationCommentView(View):
     def post(self, request, *args, **kwargs):

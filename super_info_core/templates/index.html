@@ -1,5 +1,6 @@
 {% extends 'base.html' %}
 {% load static %}
+{% load i18n %}
 
 {% block content %}
 <header class="tm-header" id="tm-header">
@@ -15,7 +16,7 @@
             <ul>
                 <li class="tm-nav-item active"><a href="index.html" class="tm-nav-link">
                     <i class="fas fa-home"></i>
-                    Blog Home
+                    {% trans 'Главная' %}
                 </a></li>
                 <li class="tm-nav-item"><a href="{% url 'about-url' %}" class="tm-nav-link">
                     <i class="far fa-comments"></i>
