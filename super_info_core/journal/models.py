@@ -27,9 +27,9 @@ class Publication(models.Model):
     short_description = models.TextField(max_length=500)
     description = models.TextField()
     image = models.ImageField()
-
     created_te = models.DateField(auto_now_add=True)
     updated_at = models.DateField(auto_now=True)
+    is_active = models.BooleanField(default=True)
 
     class Meta:
         verbose_name_plural = 'Публикации'

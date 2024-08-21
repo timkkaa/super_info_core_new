@@ -3,8 +3,8 @@ from django.views import View
 from django.db.models import Q
 from django.views.generic import TemplateView
 from journal.models import Publication, PublicationComment, AboutMe
-# from django.shortcuts import render, redirect
-# from journal.telegram import bot
+from django.shortcuts import render, redirect
+from journal.telegram import bot
 
 
 class HomeView(TemplateView):
@@ -14,13 +14,12 @@ class HomeView(TemplateView):
         context = super().get_context_data(**kwargs)
         publications = Publication.objects.all()
         paginator = Paginator(publications, 1)
-
-
         page_number = self.request.GET.get('page', 1)
         page_obj = paginator.get_page(page_number)
-
         context['page_obj'] = page_obj
         return context
+
+
 
 class HomeSearchView(TemplateView):
     template_name = 'index.html'
@@ -37,6 +36,15 @@ class HomeSearchView(TemplateView):
 
 class PublicationView(TemplateView):
     template_name = 'publication-detail.html'
+
+
+    def get_context_data(self, **kwargs):
+        publication_pk = kwargs['pk']
+        context = {
+            'publication': Publication.objects.get(id=publication_pk)
+        }
+        return context
+
 
 
 class AboutView(TemplateView):
@@ -57,4 +65,13 @@ class AboutView(TemplateView):
         return request('publication-detail.html', publication_pk),
 
 class CreatePublicationCommentView(View):
-    pass
+    def post(self, request, *args, **kwargs):
+        publication_pk = kwargs['pk']
+        publication = Publication.objects.get(id=publication_pk)
+
+        comment_text = request.POST['comment_text']
+
+        PublicationComment.objects.create(publication=publication, text=comment_text)
+        bot.send_message(chat_id=123456789, text='для вашей публикации написали комментрий. Не забудь проверить!')
+
+        return redirect('publication-detail-url', pk=publication_pk)
