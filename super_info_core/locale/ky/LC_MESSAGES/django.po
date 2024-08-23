@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-21 15:03+0300\n"
+"POT-Creation-Date: 2024-08-21 20:12+0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,26 +17,14 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-#: .\super_info_core\settings.py:118
+#: .\super_info_core\settings.py:120
 msgid "Russian"
-msgstr "Россия"
+msgstr ""
 
-#: .\super_info_core\settings.py:119
+#: .\super_info_core\settings.py:121
 msgid "Kyrgyz"
-msgstr "Кыргызтан"
+msgstr ""
 
 #: .\templates\index.html:19
 msgid "Главная"
-msgstr "Башкы"
-
-msgid "Page"
-msgstr "Бет"
-
-msgid "Next"
-msgstr "Кийинки"
-
-msgid "Blok Home"
-msgstr "Башкы бет"
-
-msgid "New"
-msgstr "Жаны"
+msgstr "ЖАНЫ!"

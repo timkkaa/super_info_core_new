@@ -14,14 +14,39 @@
 # python manage.py makemigrations
 # python manage.py migrate
 # pip freeze
+# python manage.py createsuperuser
+# echo 'print("Hello World")' | Out-File "fileName.py" -Encoding utf8
+# dir
+# echo "print(3+2)" > program.py -Encoding utf8
+# echo "Hello, World!" > filename.txt
+# Move-Item program.py C:\Users\user\papka1\
+# Move-Item program.py ..\
+# New-Item -Path "program.py" -ItemType "File"
+# mkdir program.py
 #
 #
 #
 #
 #
-#ddsdal
 #
 #
-
-
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
 #
