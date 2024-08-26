@@ -9,7 +9,7 @@
 # git status
 # git --version
 # git add ..
-# git commit "..."
+# git commit -m "..."
 # git push
 # python manage.py makemigrations
 # python manage.py migrate
