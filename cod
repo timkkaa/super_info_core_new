@@ -23,7 +23,7 @@
 # Move-Item program.py ..\
 # New-Item -Path "program.py" -ItemType "File"
 # mkdir program.py
-#
+# git rm -r --cached .
 #
 #
 #
