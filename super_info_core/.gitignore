@@ -3,7 +3,7 @@
 
 static/
 
-
+/cod/
 
 ### Django ###
 *.log
@@ -13,7 +13,6 @@ __pycache__/
 local_settings.py
 db.sqlite3
 db.sqlite3-journal
-cod
 media
 
 # If your build process includes running collectstatic, then you probably don't need or want to include staticfiles/
